@@ -1,6 +1,6 @@
 defmodule AcmeWorkdayManager.Models do
   defmodule Employee do
-    defstruct name: nil, pis_number: nil, workload: []
+    defstruct name: nil, pis_number: nil, workload: [], entries: []
 
     def new(collection) when is_list(collection) do
       Enum.map(collection, &new(&1))
