@@ -22,3 +22,6 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 acme_workday_manager-*.tar
 
+# Ignore input files
+config.json
+timeclock_entries.json

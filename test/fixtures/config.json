@@ -1,0 +1,17 @@
+{
+    "today": "2018-05-20",
+    "period_start": "2018-05-19",
+    "employees": [
+      {
+          "workload": [
+              {
+                  "workload_in_minutes": 100,
+                  "minimum_rest_interval_in_minutes": 10,
+                  "days": [ "mon" ]
+              }
+          ],
+          "pis_number": "19827364817",
+          "name": "Foo Bar"
+      }
+    ]
+}
