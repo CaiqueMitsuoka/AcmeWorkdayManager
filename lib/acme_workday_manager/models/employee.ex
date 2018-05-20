@@ -2,7 +2,12 @@ defmodule AcmeWorkdayManager.Models.Employee do
   alias __MODULE__
   alias AcmeWorkdayManager.Models.Week
 
-  defstruct name: nil, pis_number: nil, week_workload: %Week{}, week_rest: %Week{}, entries: []
+  defstruct name: nil,
+            pis_number: nil,
+            week_workload: %Week{},
+            week_rest: %Week{},
+            entries: [],
+            report: %{}
 
   def new(collection) when is_list(collection) do
     Enum.map(collection, &new(&1))
