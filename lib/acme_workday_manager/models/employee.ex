@@ -7,7 +7,8 @@ defmodule AcmeWorkdayManager.Models.Employee do
             week_workload: %Week{},
             week_rest: %Week{},
             entries: [],
-            report: %{}
+            report: %{},
+            summary: %{}
 
   def new(collection) when is_list(collection) do
     Enum.map(collection, &new(&1))

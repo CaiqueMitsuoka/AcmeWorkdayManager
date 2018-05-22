@@ -10,4 +10,12 @@ defmodule AcmeWorkdayManager.Models.Week do
 
     Map.put(week, day, update_lambda.(Map.get(week, day)))
   end
+
+  def get(week, day) when is_integer(day) do
+    get(week, Enum.at([:sun, :mon, :tue, :wed, :thu, :fri, :sat], day - 1))
+  end
+
+  def get(week, day) do
+    Map.get(week, day, 0)
+  end
 end
